@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarnpkg install
+
+PATH: 
+  /home/kim/Desktop/reactNative+nextjsApp/node_modules/.bin:/home/kim/Desktop/node_modules/.bin:/home/kim/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bin:/home/kim/anaconda3/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/kim/.dotnet/tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EIO: i/o error, copyfile '/home/kim/.cache/yarn/v6/npm-source-map-0.6.1-74722af32e9614e9c287a8d0bbde48b5e2f1a263-integrity/node_modules/source-map/lib/util.js' -> '/home/kim/Desktop/reactNative+nextjsApp/expo-with-nextjs/node_modules/recast/node_modules/source-map/lib/util.js'
+
+npm manifest: 
+  {
+    "name": "expo-with-nextjs",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~45.0.0",
+      "expo-status-bar": "~1.3.0",
+      "react": "17.0.2",
+      "react-dom": "17.0.2",
+      "react-native": "0.68.2",
+      "react-native-web": "0.17.7"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.9"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

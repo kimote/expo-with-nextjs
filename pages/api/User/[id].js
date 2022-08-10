@@ -1,5 +1,5 @@
 import addUser from "../../../models/addUser";
-import dbConnect from "../../../utils/mongodb";
+import mongodb from "../../../lib/mongodb";
 
 export default async (req, res) => {
 	const { method } = req;

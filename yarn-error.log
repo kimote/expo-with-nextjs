@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /usr/local/bin/yarnpkg install
+  /usr/bin/node /usr/local/bin/yarn next dev
 
 PATH: 
-  /home/kim/Desktop/reactNative+nextjsApp/node_modules/.bin:/home/kim/Desktop/node_modules/.bin:/home/kim/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bin:/home/kim/anaconda3/bin:/home/kim/.local/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/kim/.dotnet/tools
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
 
 Yarn version: 
   1.22.19
@@ -14,7 +14,12 @@ Platform:
   linux x64
 
 Trace: 
-  Error: EIO: i/o error, copyfile '/home/kim/.cache/yarn/v6/npm-source-map-0.6.1-74722af32e9614e9c287a8d0bbde48b5e2f1a263-integrity/node_modules/source-map/lib/util.js' -> '/home/kim/Desktop/reactNative+nextjsApp/expo-with-nextjs/node_modules/recast/node_modules/source-map/lib/util.js'
+  SyntaxError: /home/kim/Desktop/reactNative+nextjsApp/expo-with-nextjs/package.json: Unexpected string in JSON at position 391
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
 
 npm manifest: 
   {
@@ -26,17 +31,35 @@ npm manifest:
       "android": "expo start --android",
       "ios": "expo start --ios",
       "web": "expo start --web",
-      "eject": "expo eject"
+      "eject": "expo eject",
+      "build": "next build"
     },
     "dependencies": {
+      "@auth0/nextjs-auth0": "^1.3.0",
+      "@prisma/client": "^2.21.2"
+      "next-auth": "^3.18.0",
+      "styled-components": "^5.2.3",
+      "typeorm": "^0.2.32",
+      "@expo/next-adapter": "^4.0.10",
       "expo": "~45.0.0",
+      "expo-next-react-navigation": "^2.0.2",
       "expo-status-bar": "~1.3.0",
+      "mongodb": "^4.8.1",
+      "mongoose": "^6.5.0",
+      "next": "^12.2.3",
+      "next-compose-plugins": "^2.2.1",
+      "next-fonts": "^1.5.1",
+      "next-images": "^1.8.4",
+      "next-transpile-modules": "^9.0.0",
       "react": "17.0.2",
       "react-dom": "17.0.2",
       "react-native": "0.68.2",
       "react-native-web": "0.17.7"
     },
     "devDependencies": {
+      "netlify-plugin-cache-nextjs": "^1.6.1",
+      "eslint": "7.32.0",
+      "eslint-config-next": "11.1.0",
       "@babel/core": "^7.12.9"
     },
     "private": true

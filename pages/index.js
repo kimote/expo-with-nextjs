@@ -97,7 +97,7 @@ export const getServerSideProps = async () => {
 	const { data } = await axios.get(url);
 	return {
 		props: {
-			tasks: data.data,
+			users: data.data,
 		},
 	};
 };

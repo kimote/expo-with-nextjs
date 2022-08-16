@@ -25,14 +25,5 @@ export default async (req, res) => {
 		}
 	}
 
-	if (method === "DELETE") {
-		try {
-			await addUser.findByIdAndDelete(id);
-			res.status(200).json({ message: "User Deleted Successfully" });
-		} catch (error) {
-			res.status(500).json({ message: "Internal Server Error" });
-			console.log(error);
-		}
-	}
 };
 

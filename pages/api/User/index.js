@@ -19,4 +19,13 @@ export default async (req, res) => {
 			console.log(error);
 		}
 	}
+	if (method === "GET") {
+		try {
+			const users = await User.find();
+			res.status(200).json({ data: tasks });
+		} catch (error) {
+			res.status(500).json({ message: "Internal Server Error" });
+			console.log(error);
+		}
+	}
 };

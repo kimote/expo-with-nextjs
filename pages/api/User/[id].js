@@ -24,6 +24,14 @@ export default async (req, res) => {
 			console.log(error);
 		}
 	}
-
+    if (method === "DELETE") {
+		try {
+			await User.findByIdAndDelete(id);
+			res.status(200).json({ message: "User Deleted Successfully" });
+		} catch (error) {
+			res.status(500).json({ message: "Internal Server Error" });
+			console.log(error);
+		}
+	}
 };
 
